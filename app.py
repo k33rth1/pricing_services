@@ -10,6 +10,7 @@ app.config.update(
     ADMIN=os.environ.get('ADMIN')
 )
 
+
 @app.route('/')
 def home():
     return render_template('home.html')
